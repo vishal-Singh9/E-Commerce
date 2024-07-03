@@ -1,0 +1,386 @@
+/* src/Navbar.css */
+body {
+  background-image: url("bck.webp");
+  background-size: cover;
+}
+.nab{
+  position:relative;
+height: 30px;
+}
+
+.navbar-nav {
+  flex: 1;
+  justify-content: center;
+}
+
+
+.ms-auto {
+  margin-left: auto !important;
+}
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+/* src/Card.css */
+.card {
+  border: 1px solid #ccc;
+  background-color: #b0f3d1;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  width: 300px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.card-description {
+  font-size: 1em;
+  margin: 8px 0;
+}
+
+.card-price {
+  font-size: 1.2em;
+  color: #877575;
+}
+
+.home {
+  margin-top: 50px;
+}
+.home-content {
+  width: 600px;
+  height: 200px;
+  padding-top: 400px;
+  margin-left: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App {
+  text-align: center;
+}
+
+
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+  display: flex;
+}
+.hero-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 180px;
+  line-height: 1.1;
+  font-family: Popins;
+}
+.hero-left h2 {
+  color: #090909;
+  font-size: 26px;
+  font-weight: 500;
+}
+.hero-left p {
+  color: #171717;
+  font-size: 100px;
+  font-weight: 700;
+}
+.hero-hand-icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-hand-icon img {
+  width: 105px;
+}
+.hero-latest-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 310px;
+  height: 70px;
+  border-radius: 75px;
+  margin-top: 30px;
+  background: #ff4141;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.hero-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1280px) {
+  .hero-left {
+    padding-left: 100px;
+  }
+  .hero-left h2 {
+    font-size: 22px;
+  }
+  .hero-left p {
+    font-size: 60px;
+  }
+  .hero-hand-icon img {
+    width: 80px;
+  }
+  .hero-latest-btn {
+    gap: 10px;
+    width: 250px;
+    height: 60px;
+    margin: 20px;
+    font-size: 18px;
+  }
+  .hero-right img {
+    width: 500px;
+  }
+}
+@media (max-width: 1024px) {
+  .hero-left {
+    padding-left: 80px;
+  }
+  .hero-left h2 {
+    font-size: 20px;
+  }
+  .hero-left p {
+    font-size: 50px;
+  }
+  .hero-hand-icon img {
+    width: 65px;
+  }
+  .hero-latest-btn {
+    width: 220px;
+    height: 50px;
+    font-size: 16px;
+  }
+  .hero-right img {
+    width: 400px;
+  }
+}
+@media (max-width: 800px) {
+  .hero-left {
+    padding-left: 30px;
+  }
+  .hero-left h2 {
+    font-size: 16px;
+  }
+  .hero-left p {
+    font-size: 40px;
+  }
+  .hero-hand-icon img {
+    width: 50px;
+  }
+  .hero-latest-btn {
+    width: 175px;
+    height: 40px;
+    font-size: 13px;
+  }
+  .hero-right img {
+    width: 300px;
+  }
+}
+@media (max-width: 500px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero-right {
+    display: none;
+  }
+  .hero-left h2 {
+    font-size: 18px;
+  }
+  .hero-left p {
+    font-size: 50px;
+  }
+  .hero-hand-icon img {
+    width: 55px;
+  }
+  .hero-latest-btn {
+    width: 200px;
+    height: 45px;
+    font-size: 14px;
+  }
+}
+.each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 350px;
+}
+
+.each-slide-effect span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+/* src/App.css */
+.App {
+    text-align: center;
+  }
+  
+  .shirts-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .card-title {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+  }
+  
+  .card-description, .card-price, .card p {
+    margin: 0.5em 0;
+  }
+
+
+
+
+
+
+
+ /* src/components/Footer.css */
+.footer {
+  background-color: #000308;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin: 20px;
+}
+
+.footer-section h2 {
+  margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin: 10px 0;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #bbb;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #bbb;
+}
+
+.footer-bottom {
+  margin-top: 15px;
+}
+/* Add these styles to your CSS file */
+
+.item-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 5px;
+  font-size: 0.75rem;
+  z-index: 1;
+}
+
+
+.btn-view {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 12px; 
+}
+
+.item-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 50%;
+}
